@@ -184,11 +184,10 @@ export default async function Home() {
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">Experience</div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  15+ Years of Cybersecurity Expertise
+                  AI & IT Professional
                 </h2>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
-                  With extensive experience in the cybersecurity industry, I&apos;ve helped organizations of all sizes
-                  protect their digital assets and infrastructure.
+                  Specializing in Artificial Intelligence and Information Technology solutions to solve complex challenges and drive innovation.
                 </p>
               </div>
               <ul className="grid gap-2 py-4">
@@ -196,25 +195,25 @@ export default async function Home() {
                   <div className="rounded-full bg-primary/10 p-1">
                     <Shield className="h-4 w-4 text-primary" />
                   </div>
-                  <span>Certified Information Systems Security Professional (CISSP)</span>
+                  <span>Machine Learning & AI Development</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="rounded-full bg-primary/10 p-1">
                     <Shield className="h-4 w-4 text-primary" />
                   </div>
-                  <span>Certified Ethical Hacker (CEH)</span>
+                  <span>Data Analysis & Visualization</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="rounded-full bg-primary/10 p-1">
                     <Shield className="h-4 w-4 text-primary" />
                   </div>
-                  <span>Offensive Security Certified Professional (OSCP)</span>
+                  <span>Full Stack Development</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="rounded-full bg-primary/10 p-1">
                     <Shield className="h-4 w-4 text-primary" />
                   </div>
-                  <span>Certified Cloud Security Professional (CCSP)</span>
+                  <span>Cloud & Infrastructure Solutions</span>
                 </li>
               </ul>
               <div>

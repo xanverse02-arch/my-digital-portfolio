@@ -29,29 +29,20 @@ export default function AboutPage() {
           <div className="grid gap-10 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_500px]">
             <div className="flex flex-col justify-center space-y-6">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">John Smith</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Jan Xandrei Padua</h2>
                 <p className="text-xl text-muted-foreground">
-                  <span className="text-primary font-semibold">Cybersecurity Consultant & Penetration Tester</span>
+                  <span className="text-primary font-semibold">Bachelor of Science Information Technology, Major in AI</span>
                 </p>
               </div>
               <div className="space-y-4">
                 <p className="text-muted-foreground">
-                  I am a dedicated cybersecurity professional with a passion for helping organizations strengthen their
-                  security posture and protect their valuable digital assets. With over 15 years of experience in the
-                  industry, I have worked with clients across various sectors, from financial services and healthcare to
-                  government and technology.
+                  I am a passionate Information Technology professional with a specialization in Artificial Intelligence. As a Bachelor of Science graduate in Information Technology with a focus on AI, I combine academic knowledge with practical expertise to develop innovative solutions that leverage the power of machine learning and intelligent systems.
                 </p>
                 <p className="text-muted-foreground">
-                  My approach combines technical expertise with a deep understanding of business needs, allowing me to
-                  develop security solutions that are both effective and practical. I believe that cybersecurity is not
-                  just about implementing technical controls, but also about building a culture of security awareness
-                  and resilience.
+                  My approach integrates cutting-edge AI technologies with a deep understanding of real-world applications, allowing me to create solutions that are both intelligent and practical. I believe that artificial intelligence has the potential to transform industries by automating complex processes, improving decision-making, and creating new opportunities for innovation and growth.
                 </p>
                 <p className="text-muted-foreground">
-                  Throughout my career, I have helped organizations identify and address security vulnerabilities,
-                  implement robust security programs, and respond effectively to security incidents. I am committed to
-                  staying at the forefront of the rapidly evolving cybersecurity landscape and sharing my knowledge with
-                  clients and the broader security community.
+                  Throughout my academic and professional journey, I have developed expertise in machine learning, data analysis, and AI application development. I am committed to staying at the forefront of AI advancement and leveraging these technologies to solve challenging problems and create meaningful impact across various domains.
                 </p>
               </div>
             </div>
