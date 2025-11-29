@@ -58,24 +58,24 @@ export default async function Home() {
             </div>
             <div className="flex items-center justify-center animate-slide-in-right">
               <div className="relative w-full max-w-[500px] aspect-square">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full blur-3xl opacity-30 animate-pulse-glow"></div>
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-indigo-600/20 rounded-full blur-2xl animate-float"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-green-600 rounded-full blur-3xl opacity-30 animate-pulse-glow"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/20 to-green-600/20 rounded-full blur-2xl animate-float"></div>
                 <div className="relative glass-dark p-6 rounded-2xl shadow-2xl">
                   <div className="grid grid-cols-2 gap-4">
                     <div className="space-y-2 col-span-2">
                       <div className="h-2 w-[80%] bg-primary/20 rounded-full"></div>
                       <div className="h-2 w-[60%] bg-primary/20 rounded-full"></div>
                     </div>
-                    <div className="h-20 bg-gradient-to-br from-primary/20 to-indigo-600/20 rounded-lg flex items-center justify-center hover:from-primary/40 hover:to-indigo-600/40 transition-all">
+                    <div className="h-20 bg-gradient-to-br from-primary/20 to-emerald-600/20 rounded-lg flex items-center justify-center hover:from-primary/40 hover:to-emerald-600/40 transition-all">
                       <Lock className="h-8 w-8 text-primary animate-glow" />
                     </div>
-                    <div className="h-20 bg-gradient-to-br from-primary/20 to-indigo-600/20 rounded-lg flex items-center justify-center hover:from-primary/40 hover:to-indigo-600/40 transition-all">
+                    <div className="h-20 bg-gradient-to-br from-primary/20 to-emerald-600/20 rounded-lg flex items-center justify-center hover:from-primary/40 hover:to-emerald-600/40 transition-all">
                       <Shield className="h-8 w-8 text-primary animate-glow" />
                     </div>
-                    <div className="h-20 bg-gradient-to-br from-primary/20 to-indigo-600/20 rounded-lg flex items-center justify-center hover:from-primary/40 hover:to-indigo-600/40 transition-all">
+                    <div className="h-20 bg-gradient-to-br from-primary/20 to-emerald-600/20 rounded-lg flex items-center justify-center hover:from-primary/40 hover:to-emerald-600/40 transition-all">
                       <Server className="h-8 w-8 text-primary animate-glow" />
                     </div>
-                    <div className="h-20 bg-gradient-to-br from-primary/20 to-indigo-600/20 rounded-lg flex items-center justify-center hover:from-primary/40 hover:to-indigo-600/40 transition-all">
+                    <div className="h-20 bg-gradient-to-br from-primary/20 to-emerald-600/20 rounded-lg flex items-center justify-center hover:from-primary/40 hover:to-emerald-600/40 transition-all">
                       <Database className="h-8 w-8 text-primary animate-glow" />
                     </div>
                     <div className="space-y-2 col-span-2 mt-2">
@@ -213,14 +213,14 @@ export default async function Home() {
               </ul>
               <div>
                 <Link href="/about">
-                  <Button className="bg-gradient-to-r from-primary to-indigo-600 hover:shadow-lg hover:shadow-primary/50 transition-all">Learn More About My Experience</Button>
+                  <Button className="bg-gradient-to-r from-primary to-emerald-600 hover:shadow-lg hover:shadow-primary/50 transition-all">Learn More About My Experience</Button>
                 </Link>
               </div>
             </div>
             <div className="flex items-center justify-center lg:justify-end animate-slide-in-right">
               <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
                 <div className="grid gap-4">
-                  <div className="overflow-hidden rounded-lg tech-border bg-gradient-to-br from-primary/20 to-indigo-600/20 p-2 lg:p-4 group hover:glow-border transition-all">
+                  <div className="overflow-hidden rounded-lg tech-border bg-gradient-to-br from-primary/20 to-emerald-600/20 p-2 lg:p-4 group hover:glow-border transition-all">
                     <Image
                       src="/digital-watchtower.png"
                       width={300}
@@ -229,7 +229,7 @@ export default async function Home() {
                       className="aspect-square rounded-md object-cover group-hover:scale-110 transition-transform duration-300"
                     />
                   </div>
-                  <div className="overflow-hidden rounded-lg tech-border bg-gradient-to-br from-primary/20 to-indigo-600/20 p-2 lg:p-4 group hover:glow-border transition-all">
+                  <div className="overflow-hidden rounded-lg tech-border bg-gradient-to-br from-primary/20 to-emerald-600/20 p-2 lg:p-4 group hover:glow-border transition-all">
                     <Image
                       src="/digital-fortress.png"
                       width={300}
@@ -240,7 +240,7 @@ export default async function Home() {
                   </div>
                 </div>
                 <div className="grid gap-4">
-                  <div className="overflow-hidden rounded-lg tech-border bg-gradient-to-br from-primary/20 to-indigo-600/20 p-2 lg:p-4 group hover:glow-border transition-all">
+                  <div className="overflow-hidden rounded-lg tech-border bg-gradient-to-br from-primary/20 to-emerald-600/20 p-2 lg:p-4 group hover:glow-border transition-all">
                     <Image
                       src="/cyber-guardian.png"
                       width={300}
@@ -249,7 +249,7 @@ export default async function Home() {
                       className="aspect-square rounded-md object-cover group-hover:scale-110 transition-transform duration-300"
                     />
                   </div>
-                  <div className="overflow-hidden rounded-lg tech-border bg-gradient-to-br from-primary/20 to-indigo-600/20 p-2 lg:p-4 group hover:glow-border transition-all">
+                  <div className="overflow-hidden rounded-lg tech-border bg-gradient-to-br from-primary/20 to-emerald-600/20 p-2 lg:p-4 group hover:glow-border transition-all">
                     <Image
                       src="/modern-soc-overview.png"
                       width={300}
@@ -260,7 +260,7 @@ export default async function Home() {
                   </div>
                 </div>
                 <div className="grid gap-4">
-                  <div className="overflow-hidden rounded-lg tech-border bg-gradient-to-br from-primary/20 to-indigo-600/20 p-2 lg:p-4 group hover:glow-border transition-all">
+                  <div className="overflow-hidden rounded-lg tech-border bg-gradient-to-br from-primary/20 to-emerald-600/20 p-2 lg:p-4 group hover:glow-border transition-all">
                     <Image
                       src="/digital-security-breach.png"
                       width={300}
@@ -269,7 +269,7 @@ export default async function Home() {
                       className="aspect-square rounded-md object-cover group-hover:scale-110 transition-transform duration-300"
                     />
                   </div>
-                  <div className="overflow-hidden rounded-lg tech-border bg-gradient-to-br from-primary/20 to-indigo-600/20 p-2 lg:p-4 group hover:glow-border transition-all">
+                  <div className="overflow-hidden rounded-lg tech-border bg-gradient-to-br from-primary/20 to-emerald-600/20 p-2 lg:p-4 group hover:glow-border transition-all">
                     <Image
                       src="/interconnected-threat-analysis.png"
                       width={300}
@@ -305,7 +305,7 @@ export default async function Home() {
         </div>
         {/* Animated background */}
         <div className="absolute inset-0 bg-grid-white/5 bg-[size:50px_50px] opacity-10"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 via-transparent to-indigo-600/10 opacity-20"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 via-transparent to-emerald-600/10 opacity-20"></div>
         <div className="absolute inset-0 bg-black bg-opacity-80"></div>
       </section>
 
