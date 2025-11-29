@@ -62,11 +62,11 @@ export default async function AdminPage() {
           <form className="space-y-4">
             <div className="space-y-2">
               <Label htmlFor="siteName">Site Name</Label>
-              <Input id="siteName" defaultValue="CyberApp" />
+              <Input id="siteName" defaultValue="Xanverse" />
             </div>
             <div className="space-y-2">
               <Label htmlFor="adminEmail">Admin Email</Label>
-              <Input id="adminEmail" type="email" defaultValue="admin@cyberapp.com" />
+              <Input id="adminEmail" type="email" defaultValue="admin@xanverse.com" />
             </div>
             <div className="space-y-2">
               <Label htmlFor="maintenanceMode">Maintenance Mode</Label>
