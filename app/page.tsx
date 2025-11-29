@@ -34,62 +34,63 @@ export default async function Home() {
         <div className="container px-4 md:px-6 relative z-10">
           <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
             <div className="flex flex-col justify-center space-y-4">
-              <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-primary to-indigo-500">
-                  Securing Your Digital Future
+              <div className="space-y-2 animate-fade-in-up">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-gradient">
+                  Xanverse AI Solutions
                 </h1>
-                <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                  Expert cybersecurity solutions to protect your organization from evolving threats. Penetration
-                  testing, security audits, and incident response services.
+                <p className="max-w-[600px] text-gray-300 md:text-xl leading-relaxed">
+                  Cutting-edge artificial intelligence and innovative technology solutions to transform your business.
+                  Specializing in machine learning, data intelligence, and intelligent automation.
                 </p>
               </div>
-              <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                {/* <Link href="/contact">
-                  <Button size="lg" className="bg-primary hover:bg-primary/90">
-                    Get Started
-                  </Button>
-                </Link> */}
+              <div className="flex flex-col gap-2 min-[400px]:flex-row animate-fade-in-up" style={{animationDelay: "0.2s"}}>
                 <Link href="/projects">
-                  <Button size="lg" variant="outline">
+                  <Button size="lg" className="bg-primary hover:bg-primary/90 transition-all hover:shadow-lg hover:shadow-primary/50">
+                    View My Work
+                  </Button>
+                </Link>
+                <Link href="/about">
+                  <Button size="lg" variant="outline" className="border-primary/50 hover:border-primary hover:bg-primary/10 transition-all">
                     Learn More
                   </Button>
                 </Link>
               </div>
             </div>
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center animate-slide-in-right">
               <div className="relative w-full max-w-[500px] aspect-square">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full blur-3xl opacity-20 animate-pulse"></div>
-                <div className="relative bg-black/40 backdrop-blur-sm border border-white/10 p-6 rounded-2xl shadow-2xl">
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full blur-3xl opacity-30 animate-pulse-glow"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-indigo-600/20 rounded-full blur-2xl animate-float"></div>
+                <div className="relative glass-dark p-6 rounded-2xl shadow-2xl">
                   <div className="grid grid-cols-2 gap-4">
                     <div className="space-y-2 col-span-2">
                       <div className="h-2 w-[80%] bg-primary/20 rounded-full"></div>
                       <div className="h-2 w-[60%] bg-primary/20 rounded-full"></div>
                     </div>
-                    <div className="h-20 bg-primary/10 rounded-lg flex items-center justify-center">
-                      <Lock className="h-8 w-8 text-primary" />
+                    <div className="h-20 bg-gradient-to-br from-primary/20 to-indigo-600/20 rounded-lg flex items-center justify-center hover:from-primary/40 hover:to-indigo-600/40 transition-all">
+                      <Lock className="h-8 w-8 text-primary animate-glow" />
                     </div>
-                    <div className="h-20 bg-primary/10 rounded-lg flex items-center justify-center">
-                      <Shield className="h-8 w-8 text-primary" />
+                    <div className="h-20 bg-gradient-to-br from-primary/20 to-indigo-600/20 rounded-lg flex items-center justify-center hover:from-primary/40 hover:to-indigo-600/40 transition-all">
+                      <Shield className="h-8 w-8 text-primary animate-glow" />
                     </div>
-                    <div className="h-20 bg-primary/10 rounded-lg flex items-center justify-center">
-                      <Server className="h-8 w-8 text-primary" />
+                    <div className="h-20 bg-gradient-to-br from-primary/20 to-indigo-600/20 rounded-lg flex items-center justify-center hover:from-primary/40 hover:to-indigo-600/40 transition-all">
+                      <Server className="h-8 w-8 text-primary animate-glow" />
                     </div>
-                    <div className="h-20 bg-primary/10 rounded-lg flex items-center justify-center">
-                      <Database className="h-8 w-8 text-primary" />
+                    <div className="h-20 bg-gradient-to-br from-primary/20 to-indigo-600/20 rounded-lg flex items-center justify-center hover:from-primary/40 hover:to-indigo-600/40 transition-all">
+                      <Database className="h-8 w-8 text-primary animate-glow" />
                     </div>
                     <div className="space-y-2 col-span-2 mt-2">
                       <div className="h-2 w-[70%] bg-primary/20 rounded-full"></div>
                       <div className="h-2 w-[50%] bg-primary/20 rounded-full"></div>
                     </div>
                   </div>
-                  <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-2/3 h-[1px] bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        {/* Animated background */}
+        {/* Enhanced animated background */}
         <div className="absolute inset-0 bg-grid-white/5 bg-[size:50px_50px] opacity-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-600/10 via-transparent to-transparent opacity-30"></div>
         <div className="absolute inset-0 bg-black bg-opacity-80"></div>
         <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black to-transparent"></div>
         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black to-transparent"></div>
@@ -109,178 +110,172 @@ export default async function Home() {
       )}
 
       {/* Services Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-background relative">
         <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12 animate-fade-in-up">
             <div className="space-y-2">
-              <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">Projects</div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Comprehensive Cybersecurity Solutions</h2>
-              <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Protect you from cybersecurity attackers.
+              <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary font-medium">Core Expertise</div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gradient">AI & Technology Solutions</h2>
+              <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
+                Transforming ideas into intelligent solutions with cutting-edge AI and technology
               </p>
             </div>
           </div>
           <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12">
-            <Card className="bg-background border-primary/20">
-              <CardHeader>
-                <AlertTriangle className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Penetration Testing</CardTitle>
-                <CardDescription>
-                  Identify vulnerabilities before attackers do with our comprehensive penetration testing services.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
+            <div className="group animate-fade-in-up" style={{animationDelay: "0.1s"}}>
+              <div className="tech-border p-6 rounded-xl bg-black/30 hover:glow-border transition-all duration-300 hover:scale-105 h-full">
+                <AlertTriangle className="h-10 w-10 text-primary mb-4 group-hover:animate-glow" />
+                <h3 className="text-xl font-bold mb-2">Machine Learning</h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Build intelligent systems with advanced ML algorithms and models
+                </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>Web Application Testing</li>
-                  <li>Network Infrastructure Testing</li>
-                  <li>Mobile Application Testing</li>
-                  <li>Social Engineering Assessments</li>
+                  <li className="flex items-center gap-2"><span className="h-1 w-1 bg-primary rounded-full"></span>Predictive Analytics</li>
+                  <li className="flex items-center gap-2"><span className="h-1 w-1 bg-primary rounded-full"></span>Neural Networks</li>
+                  <li className="flex items-center gap-2"><span className="h-1 w-1 bg-primary rounded-full"></span>NLP Solutions</li>
+                  <li className="flex items-center gap-2"><span className="h-1 w-1 bg-primary rounded-full"></span>Computer Vision</li>
                 </ul>
-              </CardContent>
-            </Card>
-            <Card className="bg-background border-primary/20">
-              <CardHeader>
-                <Shield className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Security Audits</CardTitle>
-                <CardDescription>
-                  Comprehensive assessment of your security posture against industry standards and best practices.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
+              </div>
+            </div>
+            <div className="group animate-fade-in-up" style={{animationDelay: "0.2s"}}>
+              <div className="tech-border p-6 rounded-xl bg-black/30 hover:glow-border transition-all duration-300 hover:scale-105 h-full">
+                <Shield className="h-10 w-10 text-primary mb-4 group-hover:animate-glow" />
+                <h3 className="text-xl font-bold mb-2">Data Analytics</h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Extract actionable insights from complex data sets
+                </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>Compliance Assessments</li>
-                  <li>Security Architecture Review</li>
-                  <li>Cloud Security Assessment</li>
-                  <li>Risk Assessment</li>
+                  <li className="flex items-center gap-2"><span className="h-1 w-1 bg-primary rounded-full"></span>Data Visualization</li>
+                  <li className="flex items-center gap-2"><span className="h-1 w-1 bg-primary rounded-full"></span>Business Intelligence</li>
+                  <li className="flex items-center gap-2"><span className="h-1 w-1 bg-primary rounded-full"></span>Statistical Analysis</li>
+                  <li className="flex items-center gap-2"><span className="h-1 w-1 bg-primary rounded-full"></span>Big Data Processing</li>
                 </ul>
-              </CardContent>
-            </Card>
-            <Card className="bg-background border-primary/20">
-              <CardHeader>
-                <FileCode className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Security Training</CardTitle>
-                <CardDescription>
-                  Empower your team with the knowledge to recognize and respond to security threats.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
+              </div>
+            </div>
+            <div className="group animate-fade-in-up" style={{animationDelay: "0.3s"}}>
+              <div className="tech-border p-6 rounded-xl bg-black/30 hover:glow-border transition-all duration-300 hover:scale-105 h-full">
+                <FileCode className="h-10 w-10 text-primary mb-4 group-hover:animate-glow" />
+                <h3 className="text-xl font-bold mb-2">Full Stack Development</h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  End-to-end development with modern tech stacks
+                </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>Security Awareness Training</li>
-                  <li>Phishing Simulations</li>
-                  <li>Developer Security Training</li>
-                  <li>Incident Response Drills</li>
+                  <li className="flex items-center gap-2"><span className="h-1 w-1 bg-primary rounded-full"></span>Web Applications</li>
+                  <li className="flex items-center gap-2"><span className="h-1 w-1 bg-primary rounded-full"></span>Cloud Infrastructure</li>
+                  <li className="flex items-center gap-2"><span className="h-1 w-1 bg-primary rounded-full"></span>API Development</li>
+                  <li className="flex items-center gap-2"><span className="h-1 w-1 bg-primary rounded-full"></span>Automation Solutions</li>
                 </ul>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Experience Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/40">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/40 relative overflow-hidden">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-[1fr_600px] lg:gap-12 xl:grid-cols-[1fr_800px]">
-            <div className="flex flex-col justify-center space-y-4">
+            <div className="flex flex-col justify-center space-y-4 animate-slide-in-left">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">Experience</div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary font-medium">Background</div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gradient">
                   AI & IT Professional
                 </h2>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
-                  Specializing in Artificial Intelligence and Information Technology solutions to solve complex challenges and drive innovation.
+                  Bachelor of Science in Information Technology specializing in Artificial Intelligence. Dedicated to building innovative solutions that leverage modern technology stacks.
                 </p>
               </div>
-              <ul className="grid gap-2 py-4">
-                <li className="flex items-center gap-2">
-                  <div className="rounded-full bg-primary/10 p-1">
-                    <Shield className="h-4 w-4 text-primary" />
+              <ul className="grid gap-3 py-4">
+                <li className="flex items-center gap-3 group">
+                  <div className="rounded-full bg-primary/10 p-2 group-hover:bg-primary/20 group-hover:scale-110 transition-all">
+                    <Shield className="h-5 w-5 text-primary" />
                   </div>
-                  <span>Machine Learning & AI Development</span>
+                  <span className="group-hover:text-primary transition-colors">Machine Learning & AI Development</span>
                 </li>
-                <li className="flex items-center gap-2">
-                  <div className="rounded-full bg-primary/10 p-1">
-                    <Shield className="h-4 w-4 text-primary" />
+                <li className="flex items-center gap-3 group">
+                  <div className="rounded-full bg-primary/10 p-2 group-hover:bg-primary/20 group-hover:scale-110 transition-all">
+                    <Shield className="h-5 w-5 text-primary" />
                   </div>
-                  <span>Data Analysis & Visualization</span>
+                  <span className="group-hover:text-primary transition-colors">Data Analysis & Visualization</span>
                 </li>
-                <li className="flex items-center gap-2">
-                  <div className="rounded-full bg-primary/10 p-1">
-                    <Shield className="h-4 w-4 text-primary" />
+                <li className="flex items-center gap-3 group">
+                  <div className="rounded-full bg-primary/10 p-2 group-hover:bg-primary/20 group-hover:scale-110 transition-all">
+                    <Shield className="h-5 w-5 text-primary" />
                   </div>
-                  <span>Full Stack Development</span>
+                  <span className="group-hover:text-primary transition-colors">Full Stack Development</span>
                 </li>
-                <li className="flex items-center gap-2">
-                  <div className="rounded-full bg-primary/10 p-1">
-                    <Shield className="h-4 w-4 text-primary" />
+                <li className="flex items-center gap-3 group">
+                  <div className="rounded-full bg-primary/10 p-2 group-hover:bg-primary/20 group-hover:scale-110 transition-all">
+                    <Shield className="h-5 w-5 text-primary" />
                   </div>
-                  <span>Cloud & Infrastructure Solutions</span>
+                  <span className="group-hover:text-primary transition-colors">Cloud & Infrastructure Solutions</span>
                 </li>
               </ul>
               <div>
                 <Link href="/about">
-                  <Button variant="outline">Learn More About My Experience</Button>
+                  <Button className="bg-gradient-to-r from-primary to-indigo-600 hover:shadow-lg hover:shadow-primary/50 transition-all">Learn More About My Experience</Button>
                 </Link>
               </div>
             </div>
-            <div className="flex items-center justify-center lg:justify-end">
+            <div className="flex items-center justify-center lg:justify-end animate-slide-in-right">
               <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
                 <div className="grid gap-4">
-                  <div className="overflow-hidden rounded-lg bg-primary/10 p-2 lg:p-4">
+                  <div className="overflow-hidden rounded-lg tech-border bg-gradient-to-br from-primary/20 to-indigo-600/20 p-2 lg:p-4 group hover:glow-border transition-all">
                     <Image
                       src="/digital-watchtower.png"
                       width={300}
                       height={300}
-                      alt="Security monitoring"
-                      className="aspect-square rounded-md object-cover"
+                      alt="AI systems"
+                      className="aspect-square rounded-md object-cover group-hover:scale-110 transition-transform duration-300"
                     />
                   </div>
-                  <div className="overflow-hidden rounded-lg bg-primary/10 p-2 lg:p-4">
+                  <div className="overflow-hidden rounded-lg tech-border bg-gradient-to-br from-primary/20 to-indigo-600/20 p-2 lg:p-4 group hover:glow-border transition-all">
                     <Image
                       src="/digital-fortress.png"
                       width={300}
                       height={300}
-                      alt="Network security"
-                      className="aspect-square rounded-md object-cover"
+                      alt="Data structures"
+                      className="aspect-square rounded-md object-cover group-hover:scale-110 transition-transform duration-300"
                     />
                   </div>
                 </div>
                 <div className="grid gap-4">
-                  <div className="overflow-hidden rounded-lg bg-primary/10 p-2 lg:p-4">
+                  <div className="overflow-hidden rounded-lg tech-border bg-gradient-to-br from-primary/20 to-indigo-600/20 p-2 lg:p-4 group hover:glow-border transition-all">
                     <Image
                       src="/cyber-guardian.png"
                       width={300}
                       height={300}
-                      alt="Cybersecurity professional"
-                      className="aspect-square rounded-md object-cover"
+                      alt="Technology professional"
+                      className="aspect-square rounded-md object-cover group-hover:scale-110 transition-transform duration-300"
                     />
                   </div>
-                  <div className="overflow-hidden rounded-lg bg-primary/10 p-2 lg:p-4">
+                  <div className="overflow-hidden rounded-lg tech-border bg-gradient-to-br from-primary/20 to-indigo-600/20 p-2 lg:p-4 group hover:glow-border transition-all">
                     <Image
                       src="/modern-soc-overview.png"
                       width={300}
                       height={300}
-                      alt="Security operations center"
-                      className="aspect-square rounded-md object-cover"
+                      alt="Cloud systems"
+                      className="aspect-square rounded-md object-cover group-hover:scale-110 transition-transform duration-300"
                     />
                   </div>
                 </div>
                 <div className="grid gap-4">
-                  <div className="overflow-hidden rounded-lg bg-primary/10 p-2 lg:p-4">
+                  <div className="overflow-hidden rounded-lg tech-border bg-gradient-to-br from-primary/20 to-indigo-600/20 p-2 lg:p-4 group hover:glow-border transition-all">
                     <Image
                       src="/digital-security-breach.png"
                       width={300}
                       height={300}
-                      alt="Penetration testing"
-                      className="aspect-square rounded-md object-cover"
+                      alt="Development"
+                      className="aspect-square rounded-md object-cover group-hover:scale-110 transition-transform duration-300"
                     />
                   </div>
-                  <div className="overflow-hidden rounded-lg bg-primary/10 p-2 lg:p-4">
+                  <div className="overflow-hidden rounded-lg tech-border bg-gradient-to-br from-primary/20 to-indigo-600/20 p-2 lg:p-4 group hover:glow-border transition-all">
                     <Image
                       src="/interconnected-threat-analysis.png"
                       width={300}
                       height={300}
-                      alt="Cyber threat intelligence"
-                      className="aspect-square rounded-md object-cover"
+                      alt="Analytics"
+                      className="aspect-square rounded-md object-cover group-hover:scale-110 transition-transform duration-300"
                     />
                   </div>
                 </div>
@@ -293,35 +288,36 @@ export default async function Home() {
       {/* Newsletter Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-black relative overflow-hidden">
         <div className="container px-4 md:px-6 relative z-10">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center animate-fade-in-up">
             <div className="space-y-2">
-              <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">Newsletter</div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
-                Stay Updated on Cybersecurity Trends
+              <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary font-medium">Newsletter</div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white text-gradient">
+                Stay Updated on AI & Tech Trends
               </h2>
-              <p className="max-w-[600px] text-gray-400 md:text-xl/relaxed">
-                Subscribe to our newsletter for the latest cybersecurity news, tips, and insights.
+              <p className="max-w-[600px] text-gray-300 md:text-xl/relaxed">
+                Subscribe to get the latest insights on artificial intelligence, machine learning, and innovative technology solutions.
               </p>
             </div>
-            <div className="w-full max-w-md">
+            <div className="w-full max-w-md mt-4">
               <NewsletterForm />
             </div>
           </div>
         </div>
         {/* Animated background */}
         <div className="absolute inset-0 bg-grid-white/5 bg-[size:50px_50px] opacity-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 via-transparent to-indigo-600/10 opacity-20"></div>
         <div className="absolute inset-0 bg-black bg-opacity-80"></div>
       </section>
 
       {/* Recent Blog Posts */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
         <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12 animate-fade-in-up">
             <div className="space-y-2">
-              <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">Blog</div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Latest Insights</h2>
-              <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Stay informed with our latest articles on cybersecurity trends, threats, and best practices.
+              <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary font-medium">Blog</div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gradient">Latest Insights</h2>
+              <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
+                Stay informed with articles on AI trends, technology innovations, and development best practices.
               </p>
             </div>
           </div>
@@ -332,34 +328,35 @@ export default async function Home() {
             </div>
           ) : (
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12">
-              {latestPosts.map((post) => (
-                <Link key={post.id} href={`/blog/${post.slug}`} className="group">
-                  <Card className="overflow-hidden bg-background border-primary/20 transition-all duration-200 group-hover:border-primary/50 group-hover:shadow-md">
-                    <div className="aspect-video w-full overflow-hidden">
+              {latestPosts.map((post, index) => (
+                <Link key={post.id} href={`/blog/${post.slug}`} className="group animate-fade-in-up" style={{animationDelay: `${index * 0.1}s`}}>
+                  <div className="tech-border rounded-lg overflow-hidden bg-black/20 transition-all duration-300 group-hover:glow-border h-full flex flex-col">
+                    <div className="aspect-video w-full overflow-hidden relative">
                       <Image
-                        src={post.coverImage || "/placeholder.svg?height=400&width=600&query=cybersecurity"}
+                        src={post.coverImage || "/placeholder.svg?height=400&width=600&query=ai"}
                         width={600}
                         height={400}
                         alt={post.title}
-                        className="object-cover transition-all duration-200 group-hover:scale-105"
+                        className="object-cover transition-all duration-300 group-hover:scale-110"
                       />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
-                    <CardHeader>
-                      <CardTitle>{post.title}</CardTitle>
-                      <CardDescription>{post.excerpt}</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-sm text-muted-foreground">{formatDate(post.createdAt)}</p>
-                    </CardContent>
-                  </Card>
+                    <div className="p-4 flex flex-col flex-grow">
+                      <h3 className="font-bold text-lg group-hover:text-primary transition-colors">{post.title}</h3>
+                      <p className="text-sm text-muted-foreground my-2 flex-grow">{post.excerpt}</p>
+                      <p className="text-xs text-muted-foreground">{formatDate(post.createdAt)}</p>
+                    </div>
+                  </div>
                 </Link>
               ))}
             </div>
           )}
 
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-8">
             <Link href="/blog">
-              <Button variant="outline">View All Articles</Button>
+              <Button variant="outline" className="border-primary/50 hover:border-primary hover:bg-primary/10 transition-all">
+                View All Articles
+              </Button>
             </Link>
           </div>
         </div>
