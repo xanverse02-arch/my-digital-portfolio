@@ -1,11 +1,10 @@
-import { clerkMiddleware, createRouteMatcher, getAuth } from "@clerk/nextjs/server";
-import { isAdmin } from "@/lib/auth";
-import { NextResponse } from "next/server";
+import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
+import { NextRequest, NextResponse } from "next/server";
 
 // Define protected routes that require authentication
 const isProtectedRoute = createRouteMatcher(['/admin','/resources(.*)', '/projects']);
 
-export default clerkMiddleware(async (auth, req) => {
+export default clerkMiddleware(async (auth: any, req: NextRequest): Promise<NextResponse | void> => {
   if (isProtectedRoute(req)) await auth.protect()
 })
 
