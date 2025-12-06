@@ -16,9 +16,9 @@ export default async function DbTestPage() {
         <CardContent>
           <p className="mb-4">Click the button below to test the database connection.</p>
           {result.success ? (
-            <div className="mt-4 p-4 bg-green-50 dark:bg-green-900/20 rounded-md">
-              <h3 className="font-medium text-green-800 dark:text-green-300">Connection Successful</h3>
-              <p className="text-sm text-green-700 dark:text-green-300 mt-1">
+            <div className="mt-4 p-4 bg-red-50 dark:bg-red-900/20 rounded-md">
+              <h3 className="font-medium text-red-800 dark:text-red-300">Connection Successful</h3>
+              <p className="text-sm text-red-700 dark:text-red-300 mt-1">
                 Server time: {result.timestamp ? new Date(result.timestamp).toLocaleString() : "Unknown"}
               </p>
               <div className="mt-2 text-sm">
